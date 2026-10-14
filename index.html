@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سهرة رصد الشهب والنجوم | Astro-Tourism</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="stars-bg"></div>
+
+    <div class="container">
+        <header class="hero-section">
+            <div class="badge">🔭 رحلة استثنائية بعيداً عن ضوضاء المدن</div>
+            <h1>سهرة رصد الشهب والنجوم<br><span class="highlight">تحت السماء المظلمة</span></h1>
+            <p class="subtitle">عش معنا تجربة فريدة من نوعها لاستكشاف مجرة درب التبانة ورصد زخات الشهب بأحدث التلسكوبات وتحت إشراف خبراء الفلك.</p>
+            <a href="#booking-form" class="btn-main">احجز مكانك الآن</a>
+        </header>
+
+        <main class="content-grid">
+            
+            <section class="glass-card info-card">
+                <h2>معلومات الرحلة</h2>
+                <ul class="trip-details">
+                    <li>
+                        <span class="icon">📅</span>
+                        <div>
+                            <strong>التاريخ:</strong>
+                            <p>الخميس القادم (يبدأ التجمع 6:00 مساءً)</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon">📍</span>
+                        <div>
+                            <strong>الموقع:</strong>
+                            <p>محمية الصحراء البيضاء / الصحراء الكبرى</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon">🔭</span>
+                        <div>
+                            <strong>التلسكوبات المتاحة:</strong>
+                            <p>تلسكوبات عاكسة متطورة لرصد الكواكب والنجوم الثنائية</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon">🎟️</span>
+                        <div>
+                            <strong>سعر التذكرة:</strong>
+                            <p class="price">450 جنيه للفرد (شامل الانتقالات والضيافة الخفيفة)</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="glass-card form-card" id="booking-form">
+                <h2>احجز مقعدك الآن</h2>
+                <p class="form-desc">الأماكن محدودة نظراً لخصوصية التجهيزات الفلكية.</p>
+                
+                <form id="stargazingForm">
+                    <div class="input-group">
+                        <label for="fullName">الاسم الكامل</label>
+                        <input type="text" id="fullName" required placeholder="أدخل اسمك الثلاثي">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone">رقم الهاتف (واتساب)</label>
+                        <input type="tel" id="phone" required placeholder="010xxxxxxxx">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="ticketsCount">عدد الأفراد</label>
+                        <input type="number" id="ticketsCount" min="1" max="10" value="1" required>
+                    </div>
+
+                    <button type="submit" class="btn-submit">تأكيد طلب الحجز</button>
+                    <div id="successMessage" class="success-msg hidden">✨ تم استلام طلبك بنجاح! سنتواصل معك قريباً لتأكيد التفاصيل.</div>
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>جميع الحقوق محفوظة © 2026 | سهرة الرصد الفلكي</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
